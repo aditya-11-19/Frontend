@@ -1,0 +1,23 @@
+include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[100],b[100];
+	int i,count=1,m; 
+	gets(a);                          //a can be atag aghh hgh.
+	gets(b);                          //b can be tfy jkbjnuhf,
+	
+	int k =strlen(a);                 //yeh null ko nhi ginta hai
+	printf("%d",k);
+	for(i=k,m=0;b[m]!='\0';i++,m++)
+	{
+		a[i]=b[m];
+	}
+	a[i]='\0';                        //remember nhi to garbage value aa rahi hai
+	
+	puts(a);
+	return 0;
+}
+                                          //in strcat(a,b)
+                                            a=atag aghh hgh.tfy jkbjnuhf,
+                                          //no space between the concatinated one.
